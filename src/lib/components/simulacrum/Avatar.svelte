@@ -1,5 +1,7 @@
 <script>
     export let name, cnName;
+    export let width = 128;
+    export let height = 128;
 
     function getImgSrc(name) {
         switch(name) {
@@ -20,7 +22,7 @@
 <img
     src={`/images/Icon/Avatar/${getImgSrc(name)}.webp`}
     alt={name}
-    width="128"
-    height="128"
+    {width}
+    {height}
     loading="lazy"
 />

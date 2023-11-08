@@ -1,7 +1,7 @@
 {
     "name": "Onyx Tortoise",
     "imgSrc": "item_Weapon_SSR_Zeke_Phy01",
-    "element": "physical-flame_global",
+    "element": "physical-flame",
     "type": "dps",
     "isMeta": true,
     "shatter": {
