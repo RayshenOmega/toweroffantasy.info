@@ -9,6 +9,9 @@
 </script>
 
 <h1>Banners</h1>
+
+<span>global/china switcher</span>
+
 <p>
     <strong>Global</strong> has had <strong>{data.global.length}</strong>
     total banners, <strong>24</strong> unique banners, and <strong>7</strong>
@@ -24,7 +27,7 @@
     Banners (first run)
 </label>
 
-<small>✨ Unique Banner</small>
+<small>✨ First appearance</small>
 
 <ol class="full-bleed" reversed>
     {#each data.global as banner}
@@ -46,7 +49,7 @@
                 <div class="name-dates">
                     <h2 style="color: var(--element-{banner.element})">
                         {#if highlightUniqueBanners}
-                            <!-- <span class="visually-hidden">First run:</span> -->
+                            <span class="visually-hidden">First run:</span>
                         {/if}
                         <a href={banner.path}>{banner.simulacrum} </a>
                     </h2>
@@ -92,16 +95,12 @@
     }
 
     .number {
-        // font-weight: 800;
         color: var(--accent);
         color: var(--text2);
         font-size: var(--step--2);
-        // flex-basis: 2.3ch;
-        // margin-left: 0.75rem;
-        // position: absolute;
-        // align-self: end;
-        // left: 0.5rem;
-        // top: 0.5rem;
+        flex-basis: 2.3ch;
+        // margin-right: -1rem;
+        // align-self: start;
         opacity: 0.7;
 
         &::before {
